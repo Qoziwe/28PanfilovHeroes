@@ -1,0 +1,520 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(20, 20, 20);
+  margin: 0;
+  user-select: none;
+  behavior: smooth;
+}
+h1,
+h2,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+/* TextSpeech */
+#TextSpeech {
+  width: 17vw;
+  height: 4vw;
+  background-color: rgba(56, 56, 56, 0.296);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 7vw;
+  right: 0vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100vw 0 0 100vw;
+  z-index: 2;
+}
+#TextSpeech button {
+  width: 10vw;
+  height: 2.8vw;
+  background-color: #d41010;
+  border: 0;
+  border-radius: 100vw;
+  font-size: 1vw;
+  font-family: monospace;
+  transition: 200ms ease-in-out;
+  color: white;
+}
+#TextSpeech button:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 2vw 0.8vw #d4101073;
+  color: rgb(216, 216, 216);
+}
+#TextSpeech button:active {
+  scale: 0.7;
+}
+
+/* WelcomePage */
+#WelcomePage {
+  height: 45vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./images/WP-Banner-BG.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#WelcomePage header {
+  width: 80vw;
+  height: 5vw;
+  background-color: rgba(56, 56, 56, 0.296);
+  backdrop-filter: blur(30px);
+  position: absolute;
+  top: 1.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vw 0 2vw;
+  border-radius: 100vw;
+}
+#WelcomePage header h1 {
+  font-size: 2vw;
+  font-family: monospace;
+  color: rgb(252, 253, 254);
+}
+#WelcomePage header nav {
+  display: flex;
+  gap: 2vw;
+}
+#WelcomePage header nav a {
+  font-size: 1.5vw;
+  font-family: monospace;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.778);
+  transition: 100ms ease-in-out;
+}
+#WelcomePage header nav a:hover {
+  scale: 1.05;
+  color: rgb(255, 255, 255);
+}
+#WelcomePage header button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+}
+#WP-Container {
+  width: 100vw;
+  height: 41vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#WP-С-Text {
+  width: 48vw;
+  height: 25vw;
+  background-color: #16161631;
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vw;
+  margin-top: 2.5vw;
+  padding: 1vw 2vw 1vw 2vw;
+  border-radius: 3vw;
+  color: white;
+}
+#WP-С-Text h1 {
+  font-size: 2vw;
+  font-family: "Montserrat", serif;
+}
+#WP-С-Text p {
+  font-size: 1.2vw;
+  font-family: "Montserrat", serif;
+  text-align: center;
+}
+#WP-С-Text button {
+  width: 20vw;
+  height: 4vw;
+  background-color: #d41010b5;
+  border: 0;
+  border-radius: 1.5vw;
+  font-size: 1.5vw;
+  color: white;
+  transition: 200ms ease-in-out;
+}
+#WP-С-Text button:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 2vw 0.8vw #d4101073;
+  color: rgb(216, 216, 216);
+}
+
+/* GreatFeat */
+#GreatFeat {
+  /* height: 90vw; */
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+#GF-Container {
+  width: 85vw;
+  /* height: 40vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vw;
+  /* padding-top: 5vw; */
+  padding: 5vw 0 5vw 0;
+}
+.GF-C-Card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+}
+.GF-C-Card:nth-child(2) {
+  grid-template-columns: 2fr 1.5fr;
+}
+.GF-C-Card div {
+  height: 40vw;
+}
+.GF-C-Image {
+  background: url(./images/Ivan_Panfilov.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3vw;
+}
+.GF-C-Card:nth-child(2) .GF-C-Image {
+  background-image: url(./images/Gavriil-Mitin.jpg);
+}
+.GF-C-Card:nth-child(3) .GF-C-Image {
+  background-image: url(./images/Vasiliy_Klochkov.jpeg);
+}
+.GF-C-Text {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+}
+.GF-C-Card:nth-child(2) .GF-C-Text {
+  align-items: start;
+  text-align: end;
+}
+.GF-C-Card:nth-child(2) article {
+  left: 4vw;
+  /* top: 0; */
+}
+.GF-C-Text article {
+  height: 0;
+  position: relative;
+  left: -4vw;
+  top: -1vw;
+  font-size: 7vw;
+  font-family: "Lora";
+  color: rgba(240, 248, 255, 0.102);
+}
+.GF-C-T-Main {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.4vw;
+  color: aliceblue;
+}
+.GF-C-Card:nth-child(2) .GF-C-T-Main {
+  align-items: end;
+}
+.GF-C-T-Main h2 {
+  margin: 1vw 0 1vw 0;
+  font-size: 1.9vw;
+  font-family: "Lora", serif;
+  font-weight: 900;
+  color: #d41010;
+  z-index: 1;
+}
+.GF-C-T-Main h1 {
+  font-size: 2.2vw;
+  font-family: "Montserrat";
+}
+.GF-C-T-Main p {
+  font-size: 1.5vw;
+  font-family: "Montserrat";
+}
+.GF-C-T-Main button {
+  width: 18vw;
+  height: 4vw;
+  background-color: #d41010;
+  border: 0;
+  border-radius: 1vw;
+  font-size: 1.5vw;
+  font-family: "Lora";
+  color: aliceblue;
+  transition: 200ms ease-in-out;
+}
+.GF-C-T-Main button:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 2vw 0.8vw #d4101073;
+  color: rgb(216, 216, 216);
+}
+
+/* MembersList */
+#MembersList {
+  /* height: 19vw; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+}
+#MS-Button {
+  width: 28vw;
+  height: 5vw;
+  background-color: #d41010;
+  position: relative;
+  top: 3.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1vw solid rgb(20, 20, 20);
+  border-radius: 100vw;
+  /* box-shadow: 0px 0px 33px 14px rgba(26, 26, 26, 1); */
+  font-size: 1.4vw;
+  font-family: monospace;
+  color: aliceblue;
+  transition: 100ms ease-in-out;
+}
+#MS-Button::before,
+#MS-Button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+}
+#MS-Button::before {
+  /* top: 2vw; */
+  left: -3.45vw;
+  width: 2.7vw;
+  height: 1.9vw;
+  top: 2.41vw;
+  border-top-right-radius: 1.4vw;
+  box-shadow: 0.01vw -0.5vw 0 0 rgb(20, 20, 20);
+}
+#MS-Button::after {
+  left: 28.69vw;
+  width: 2.7vw;
+  height: 1.9vw;
+  top: 2.41vw;
+  border-top-left-radius: 1.4vw;
+  box-shadow: -0.01vw -0.5vw 0 0 rgb(20, 20, 20);
+}
+#MS-Button:hover {
+  scale: 1.05;
+}
+#ML-Container {
+  width: 100vw;
+  background-color: rgb(35, 35, 35);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  padding: 7vw 0 4vw 0;
+  border-radius: 2vw;
+  font-size: 1.8vw;
+  font-family: monospace;
+  color: aliceblue;
+}
+.ML-C-Card {
+  width: 25vw;
+  height: 10vw;
+  background-color: #333333;
+  margin-bottom: 0vw;
+  padding: 0.7vw 1vw 0.7vw 1vw;
+  border-radius: 2vw;
+}
+.ML-C-Name {
+  height: 50%;
+  width: 100%;
+  /* background-color: #d41010; */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  display: flex;
+  gap: 0.9vw;
+}
+.ML-C-N-Image {
+  width: 4vw;
+  height: 4vw;
+  object-fit: cover;
+  border-radius: 10vw;
+}
+.ML-C-N-Text {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.ML-C-N-Text h1 {
+  font-size: 1.2vw;
+  font-family: "Montserrat";
+}
+.ML-C-N-Text p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2vw;
+  font-family: "Montserrat";
+  font-weight: 100;
+}
+.ML-C-Information {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ML-C-I-Birthplace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8vw;
+  /* flex-direction: column; */
+}
+.ML-C-I-Birthplace p {
+  font-size: 1.3vw;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+.ML-C-I-Button {
+  width: 10vw;
+  height: 3vw;
+  background-color: #d41010;
+  border: 0;
+  border-radius: 10vw;
+  font-size: 1vw;
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: aliceblue;
+  transition: 200ms ease-in-out;
+}
+.ML-C-I-Button:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 2vw 0.8vw #d4101073;
+  color: rgb(216, 216, 216);
+}
+
+/* MembersAwards */
+#MembersAwards {
+  /* background: url(https://vkplay.ru/pre_0x736_resize/hotbox/content_files/news/2021/07/13/545614319450476981a285445e59ae85.jpg?quality=85); */
+  background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.8029586834733894) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(https://vkplay.ru/pre_0x736_resize/hotbox/content_files/news/2021/07/13/545614319450476981a285445e59ae85.jpg?quality=85);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#MA-Article {
+  margin-top: 5vw;
+  font-size: 4vw;
+  font-family: monospace;
+  color: aliceblue;
+}
+#MA-Main {
+  height: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#MA-M-Model {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#MA-M-Model model-viewer {
+  width: 35vw;
+  height: 35vw;
+}
+#MA-M-Text {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+#MA-M-Text li {
+  /* max-width: 40vw; */
+  padding: 0;
+  margin: 0;
+  font-size: 1.4vw;
+  font-family: monospace;
+  color: aliceblue;
+}
+
+/* Footer */
+#Footer {
+  height: 7vw;
+}
+#Footer footer {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#Footer footer h1 {
+  font-size: 2vw;
+  font-family: monospace;
+  color: aliceblue;
+}
+#Footer footer nav {
+  display: flex;
+  gap: 5vw;
+}
+#Footer footer nav a {
+  font-size: 1.4vw;
+  font-family: monospace;
+  color: rgba(240, 248, 255, 0.846);
+  text-decoration: none;
+  transition: 100ms ease-in-out;
+}
+#Footer footer nav a:hover {
+  scale: 1.1;
+  color: rgb(255, 255, 255);
+}
+
+/* Расположение стилей должно идти в строгом порядке
+width
+height
+background
+background-size
+background-repeat
+opacity
+position
+left - right - top - bottom
+display
+justify-content
+align-items
+flex-direction
+gap
+margin
+padding
+border
+border-radius
+box-shadow
+text-align
+font-size
+font-family
+font-weight
+letter-spacing
+word-spacing
+line-height
+text-decoration
+color
+transition
+transform
+user-select 
+z-index
+*/
