@@ -349,8 +349,9 @@ button {
 }
 #ML-Container {
   width: 100vw;
+  max-height: 0vw;
   background-color: rgb(35, 35, 35);
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
