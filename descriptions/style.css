@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  height: 100vh;
   background-color: rgb(20, 20, 20);
   margin: 0;
   user-select: none;
@@ -57,18 +58,63 @@ header button {
   background-color: rgba(0, 0, 0, 0);
   border: 0;
 }
+.WP-SearchContainer {
+  display: flex;
+  align-items: center;
+  width: 22vw; /* Зарезервированное место для кнопки и инпута */
+  justify-content: end;
+  align-items: center;
+  overflow: hidden;
+}
+.WP-SearchInput {
+  width: 0;
+  height: 2.5vw;
+  background-color: #bfbfbf65;
+  padding: 0 0 0 0.5vw;
+  border: none;
+  border-radius: 0.5vw 0 0 0.5vw;
+  outline: none;
+  font-size: 1vw;
+  color: rgb(232, 232, 232);
+  transition: width 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+.WP-SearchInput::placeholder {
+  color: rgba(232, 232, 232, 0.767);
+}
+.WP-SearchBtn {
+  height: 3vw;
+  width: 3vw;
+  background-color: rgba(202, 202, 202, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0 0.5vw 0.5vw 0;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1vw;
+  cursor: pointer;
+  padding: 0;
+}
+.WP-SearchContainer.active .WP-SearchInput {
+  width: 18vw; /* Максимальная ширина инпута */
+  opacity: 1;
+}
 
 /* Main */
 #Main {
-  width: 90vw;
+  width: 85vw;
   height: 42vw;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
 #M-Name {
-  width: 30vw;
+  width: 29vw;
   height: 100%;
   background-color: #a80e0e;
   position: relative;
@@ -78,31 +124,59 @@ header button {
   border-radius: 3vw;
 }
 #M-Name h1 {
-  margin-left: 2vw;
+  margin-left: 1vw;
   font-size: 5vw;
   font-family: "Montserrat";
   font-weight: 900;
   letter-spacing: 1vw;
   line-height: 4vw;
-  color: #6c0f0f;
+  color: #e07575;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
 #M-MainText {
-  width: 75vw;
-  height: 35vw;
+  width: 70vw;
+  height: 32vw;
   background-color: #333333e4;
   position: absolute;
-  right: 8vw;
+  right: 0;
+  display: flex;
+  padding: 1.5vw 2vw 1.5vw 2vw;
   border-radius: 3vw;
 }
 #M-MT-Image {
   width: 20vw;
   height: 100%;
-  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
 }
 #M-MT-Image img {
-  width: 20vw;
+  width: 15vw;
+  height: 15vw;
+}
+#M-MT-Description {
+  padding: 0 2vw 0 2vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vw;
+}
+#M-MT-Description h1 {
+  font-size: 2vw;
+  font-family: "Montserrat";
+  color: aliceblue;
+}
+#M-MT-Description p {
+  font-size: 0.9vw;
+  font-family: "Source Code Pro";
+  font-weight: 900;
+  line-height: 1.2vw;
+  color: aliceblue;
+}
+#M-MT-Description p:nth-child(4) {
+  margin-left: 2vw;
+  font-weight: 100;
+  /* color: #6c0f0f; */
 }
 
 /* Расположение стилей должно идти в строгом порядке
