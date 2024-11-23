@@ -93,9 +93,49 @@ button {
   scale: 1.05;
   color: rgb(255, 255, 255);
 }
-#WelcomePage header button {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0;
+.WP-SearchContainer {
+  display: flex;
+  align-items: center;
+  width: 22vw; /* Зарезервированное место для кнопки и инпута */
+  justify-content: end;
+  align-items: center;
+  overflow: hidden;
+}
+.WP-SearchInput {
+  width: 0;
+  height: 2.5vw;
+  background-color: #bfbfbf65;
+  padding: 0 0 0 0.5vw;
+  border: none;
+  border-radius: 0.5vw 0 0 0.5vw;
+  outline: none;
+  font-size: 1vw;
+  color: rgb(232, 232, 232);
+  transition: width 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+.WP-SearchInput::placeholder {
+  color: rgba(232, 232, 232, 0.767);
+}
+.WP-SearchBtn {
+  height: 3vw;
+  width: 3vw;
+  background-color: rgba(202, 202, 202, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0 0.5vw 0.5vw 0;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1vw;
+  cursor: pointer;
+  padding: 0;
+}
+.WP-SearchContainer.active .WP-SearchInput {
+  width: 18vw; /* Максимальная ширина инпута */
+  opacity: 1;
 }
 #WP-Container {
   width: 100vw;
