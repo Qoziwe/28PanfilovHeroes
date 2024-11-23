@@ -133,6 +133,7 @@ header button {
   color: #e07575;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+  text-align: center;
 }
 #M-MainText {
   width: 70vw;
@@ -153,6 +154,7 @@ header button {
 #M-MT-Image img {
   width: 15vw;
   height: 15vw;
+  border-radius: 100vw;
 }
 #M-MT-Description {
   padding: 0 2vw 0 2vw;

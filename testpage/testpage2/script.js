@@ -1,27 +1,59 @@
-// Данные массива
-const people = [
-  { id:0, name: "Иван Иванов", age: 25, bio: "Преподаватель математики." },
-  { id:1, name: "Мария Петрова", age: 30, bio: "Преподаватель истории." },
-  { id:2, name: "Алексей Сидоров", age: 40, bio: "Директор колледжа." },
-  { id:3, name: "ЛЕВА ЕГОРИН", age: 4039, bio: "ахует ькакой крутой чел"}
+// Пример массива словарей
+const data = [
+  {
+    name: "Alice",
+    title: "Engineer",
+    birthdate: "1990-01-01",
+    birthplace: "London",
+    bio: "Loves coding.",
+  },
+  {
+    name: "Bob",
+    title: "Artist",
+    birthdate: "1985-05-12",
+    birthplace: "Paris",
+    bio: "Enjoys painting.",
+  },
+  {
+    name: "Charlie",
+    title: "Doctor",
+    birthdate: "1992-11-30",
+    birthplace: "New York",
+    bio: "Helps people.",
+  },
 ];
 
-// Контейнер для карточек
-const bioContainer = document.getElementById("bioContainer");
-
-// Функция для создания карточек
-function renderCards(data) {
-  data.forEach(person => {
-      const card = document.createElement("div");
-      card.className = "card";
-      card.innerHTML = `
-          <h2>${person.name}</h2>
-          <p><strong>Возраст:</strong> ${person.age}</p>
-          <p><strong>Биография:</strong> ${person.bio}</p>
-      `;
-      bioContainer.appendChild(card);
+// Функция для поиска значений
+function findValueInObjects(data, inputValue) {
+  const indices = [];
+  data.forEach((item, index) => {
+    // Проверяем, есть ли значение в любом поле объекта
+    const values = Object.values(item).map(String); // Преобразуем все значения в строки
+    if (values.some((value) => value.includes(inputValue))) {
+      indices.push(index); // Добавляем индекс в массив
+    }
   });
+  return indices;
 }
 
-// Вызов функции для рендера
-renderCards(people);
+// Логика обработки событий
+document.getElementById("searchButton").addEventListener("click", () => {
+  const inputValue = document.getElementById("searchInput").value.trim(); // Получаем значение из инпута
+  const resultElement = document.getElementById("result");
+
+  if (!inputValue) {
+    resultElement.textContent = "Введите значение для поиска!";
+    return;
+  }
+
+  const result = findValueInObjects(data, inputValue);
+
+  // Выводим результат
+  if (result.length > 0) {
+    resultElement.textContent = `Значение найдено в словарях с индексами: ${result.join(
+      ", "
+    )}`;
+  } else {
+    resultElement.textContent = "Значение не найдено.";
+  }
+});
