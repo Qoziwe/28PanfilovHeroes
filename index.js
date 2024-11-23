@@ -1249,3 +1249,8 @@ MLButtonSearch.onclick = function () {
 MLResetButton.onclick = function () {
   MLCCardsContainer.innerHTML = cardsValues;
 };
+descriptionPage=function(n){
+  localStorage.setItem('pageNumber', n);
+  console.log(localStorage.getItem('pageNumber'))
+  window.location.href="./descriptions/lecva.html"
+}

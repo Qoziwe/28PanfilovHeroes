@@ -1,39 +1,27 @@
-// Массив с данными карточек
-const cardsData = [
-  { title: "Карточка 1", description: "Это описание первой карточки." },
-  {
-    title: "Карточка 2",
-    description: "Это описание второй карточки с ключевым словом.",
-  },
-  { title: "Карточка 3", description: "Описание третьей карточки." },
-  { title: "Карточка 4", description: "Ключевое слово в этой карточке." },
+// Данные массива
+const people = [
+  { id:0, name: "Иван Иванов", age: 25, bio: "Преподаватель математики." },
+  { id:1, name: "Мария Петрова", age: 30, bio: "Преподаватель истории." },
+  { id:2, name: "Алексей Сидоров", age: 40, bio: "Директор колледжа." },
+  { id:3, name: "ЛЕВА ЕГОРИН", age: 4039, bio: "ахует ькакой крутой чел"}
 ];
 
-// Функция для отображения карточек
-function displayCards(cards) {
-  const container = document.getElementById("cardsContainer");
-  container.innerHTML = ""; // Очистить контейнер перед добавлением новых карточек
-  cards.forEach((card) => {
-    const cardElement = document.createElement("div");
-    cardElement.classList.add("card");
-    cardElement.innerHTML = `<h3>${card.title}</h3><p>${card.description}</p>`;
-    container.appendChild(cardElement);
+// Контейнер для карточек
+const bioContainer = document.getElementById("bioContainer");
+
+// Функция для создания карточек
+function renderCards(data) {
+  data.forEach(person => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+          <h2>${person.name}</h2>
+          <p><strong>Возраст:</strong> ${person.age}</p>
+          <p><strong>Биография:</strong> ${person.bio}</p>
+      `;
+      bioContainer.appendChild(card);
   });
 }
 
-// Функция для фильтрации карточек
-function filterCards() {
-  const keyword = document.getElementById("keyword").value.toLowerCase();
-  const filteredCards = cardsData.filter(
-    (card) =>
-      card.title.toLowerCase().includes(keyword) ||
-      card.description.toLowerCase().includes(keyword)
-  );
-  displayCards(filteredCards);
-}
-
-// Слушатель события на кнопку фильтрации
-document.getElementById("filterBtn").addEventListener("click", filterCards);
-
-// Изначально отображаем все карточки
-displayCards(cardsData);
+// Вызов функции для рендера
+renderCards(people);
