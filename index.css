@@ -372,6 +372,47 @@ button {
   color: aliceblue;
   transition: 1000ms ease-in-out;
 }
+#ML-Block {
+  display: flex;
+  align-items: center;
+}
+#ML-Input {
+  height: 2.5vw;
+  width: 20vw;
+  background-color: rgb(48, 48, 48);
+  font-size: 1vw;
+  padding: 0 0.5vw;
+  border: 0vw;
+  border-radius: 0.5vw 0 0 0.5vw;
+  outline: none;
+  color: aliceblue;
+}
+#ML-Input::placeholder {
+  color: rgba(255, 255, 255, 0.802);
+}
+#ML-ButtonSearch,
+#ML-ResetButton {
+  height: 2.5vw;
+  font-size: 1vw;
+  padding: 0 1vw;
+  border: none;
+  border-radius: 0.3vw;
+  background-color: #d41010;
+  color: white;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+#ML-ButtonSearch:hover,
+#ML-ResetButton:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 2vw 0.8vw #d4101073;
+}
+#ML-ButtonSearch {
+  border-radius: 0 0.5vw 0.5vw 0;
+}
+#ML-ResetButton {
+  margin-left: 2vw;
+}
 #ML-C-Cards {
   display: flex;
   justify-content: center;
