@@ -296,8 +296,25 @@ const people = [
     16 ноября 1941 года у разъезда Дубосеково Волоколамского района Московской области Иван Москаленко в составе группы истребителей танков участвовал в отражении многочисленных атак противника, было уничтожено 18 вражеских танков[1]. Это сражение вошло в историю, как подвиг 28 героев-панфиловцев. В этом бою Иван Москаленко погиб[2].
     `,
   },
+  {
+    name: "Панфилов<br>Иван",
+    title: "Иван Васильевич Панфилов",
+    birthdate: "Дата рождения: 1912 год",
+    birthplace: "Место рождения:Село Кордай",
+    bio: `Иван Васильевич Панфилов родился 1 января 1893 года в городе Петровск Саратовской губернии в семье конторского служащего. 1
+    <br><br>
+    В 1915 году был призван в царскую армию и участвовал в Первой мировой войне. 1
+    <br><br>
+    Октябрьскую революцию Панфилов принял положительно и в 1918 году добровольно пошёл служить в Красную Армию. Его зачислили в Саратовский пехотный полк Чапаевской дивизии. 1
+    <br><br>
+    В годы Гражданской войны Иван Васильевич принимал активное участие в боевых действиях. Командуя взводом и ротой, он сражался против белогвардейских сил генералов Дутова, Колчака, Деникина и белополяков. 1
+    <br><br>
+    После войны в 1923 году Панфилов окончил двухгодичную Киевскую военную школу и вскоре получил назначение в Среднеазиатский военный округ. За эти годы он принимал активное участие в борьбе с басмачами, командовал батальоном и полком. 1`,
+  },
 ];
-const htmlValue = (data) => `<div id="header-container">
+const htmlValue = (data) => `<section id="TextSpeech">
+<button id="TextSpeechButton">Озвучить</button>
+</section><div id="header-container">
       <header>
         <h1>ITLyceum54</h1>
         <nav>
@@ -338,3 +355,48 @@ function renderCards(data) {
 
 // Вызов функции для рендера
 renderCards(people[localStorage.getItem("pageNumber")]);
+
+document
+  .getElementById("TextSpeechButton")
+  .addEventListener("click", function () {
+    // Get the selected text
+    const selectedText = window.getSelection().toString();
+
+    // If no text is selected, use a default text
+    const textToRead =
+      selectedText || document.getElementById("text-to-read").textContent;
+
+    if (textToRead.trim()) {
+      const speech = new SpeechSynthesisUtterance();
+      speech.text = textToRead;
+      speech.lang = "ru-RU"; // Set language to Russian
+      window.speechSynthesis.speak(speech);
+    } else {
+      alert("Пожалуйста, выберите текст для озвучивания.");
+    }
+  });
+document.addEventListener("contextmenu", function (e) {
+  // Убираем блокировку, если она есть
+  e.preventDefault();
+});
+
+// Время бездействия (в миллисекундах)
+const idleTimeLimit = 0.5 * 60 * 1000; // 5 минут
+let idleTime = 0;
+// Функция для сброса времени бездействия
+function resetIdleTime() {
+  idleTime = 0;
+}
+// Функция, которая будет вызываться каждую секунду
+function checkIdleTime() {
+  idleTime += 1000; // увеличиваем время бездействия на 1 секунду
+  // Если время бездействия превышает лимит, перенаправляем на главную страницу
+  if (idleTime >= idleTimeLimit) {
+    window.location.href = "/"; // Главная страница
+  }
+}
+// События, которые будут сбрасывать таймер
+document.addEventListener("mousemove", resetIdleTime); // Движение мыши
+document.addEventListener("keydown", resetIdleTime); // Нажатие клавиш
+// Запускаем проверку времени бездействия
+setInterval(checkIdleTime, 1000); // Проверяем каждую секунду

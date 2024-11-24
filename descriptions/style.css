@@ -5,7 +5,7 @@ body {
   height: 100vh;
   background-color: rgb(20, 20, 20);
   margin: 0;
-  user-select: none;
+  /* user-select: none; */
   behavior: smooth;
 }
 h1,
@@ -15,6 +15,42 @@ button {
   margin: 0;
   padding: 0;
 }
+
+/* TextSpeech */
+#TextSpeech {
+  width: 17vw;
+  height: 4vw;
+  background-color: rgba(56, 56, 56, 0.296);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 7vw;
+  right: 0vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100vw 0 0 100vw;
+  z-index: 2;
+}
+#TextSpeech button {
+  width: 10vw;
+  height: 2.8vw;
+  background-color: #f9202f;
+  border: 0;
+  border-radius: 100vw;
+  font-size: 1vw;
+  font-family: monospace;
+  transition: 200ms ease-in-out;
+  color: white;
+}
+#TextSpeech button:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 2vw 0.8vw #f9202f73;
+  color: rgb(216, 216, 216);
+}
+#TextSpeech button:active {
+  scale: 0.7;
+}
+
 #header-container {
   height: 8vw;
   display: flex;
@@ -125,7 +161,7 @@ header button {
 }
 #M-Name h1 {
   margin-left: 1vw;
-  font-size: 5vw;
+  font-size: 4vw;
   font-family: "Montserrat";
   font-weight: 900;
   letter-spacing: 1vw;
@@ -155,6 +191,7 @@ header button {
   width: 15vw;
   height: 15vw;
   border-radius: 100vw;
+  object-fit: cover;
 }
 #M-MT-Description {
   padding: 0 2vw 0 2vw;

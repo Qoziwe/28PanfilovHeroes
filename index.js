@@ -300,37 +300,36 @@ const people = [
 
 const sources = [
   {
-    date:"15 ноября 1941",
-    title:"Оборона под Дубосеково",
-    text:"15 ноября началась вторая фаза немецкого наступления на Москву. 3-я танковая группа вермахта атаковала южнее Калинина, что привело к разрыву в 16–18 км между 30-й и 16-й армиями. Противник прорвал оборону 30-й армии, изолировав её правый фланг, и начал наступление силами 2-й танковой дивизии на высоты восточнее Волоколамска. 5-я и 11-я танковые дивизии прикрывали её фланги, однако их действия осложнялись нехваткой времени на перегруппировку. <br> На стыке 316-й стрелковой дивизии и кавгруппы Доватора завязались ожесточённые бои. Противник выбил части из Морозово, но советские войска контратакой восстановили позиции. 1075-й стрелковый полк занял оборону, однако плотность немецких атак осложняла выполнение приказов о наступлении. Несмотря на перегруппировку, советские войска оказались под угрозой прорыва из-за концентрации немецких танковых дивизий.",
+    date: "15 ноября 1941",
+    title: "Оборона под Дубосеково",
+    text: "15 ноября началась вторая фаза немецкого наступления на Москву. 3-я танковая группа вермахта атаковала южнее Калинина, что привело к разрыву в 16–18 км между 30-й и 16-й армиями. Противник прорвал оборону 30-й армии, изолировав её правый фланг, и начал наступление силами 2-й танковой дивизии на высоты восточнее Волоколамска. 5-я и 11-я танковые дивизии прикрывали её фланги, однако их действия осложнялись нехваткой времени на перегруппировку. <br> На стыке 316-й стрелковой дивизии и кавгруппы Доватора завязались ожесточённые бои. Противник выбил части из Морозово, но советские войска контратакой восстановили позиции. 1075-й стрелковый полк занял оборону, однако плотность немецких атак осложняла выполнение приказов о наступлении. Несмотря на перегруппировку, советские войска оказались под угрозой прорыва из-за концентрации немецких танковых дивизий.",
   },
   {
-    date:"17 ноября 1941",
-    title:"Публикация в Красной звезде",
-    text:"Авторы сопоставляют данные «Политдонесения начальника политотдела 316-й стрелковой дивизии Галушко начальнику политотдела 16-й армии Масленову» от 17 ноября 1941 года со статьёй Г. Иванова в газете «Известия» от 18 ноября 1941 года. В донесении отмечается, что вечером 15 ноября был получен приказ о наступлении 316-й стрелковой дивизии. Однако утром 16 ноября противник первым перешёл в наступление на левом фланге в районе 1075-го стрелкового полка. Несмотря на героизм личного состава, противник прорвал оборону, занял Нелидово, Ново-Никольское, Ядрово, Рождествено и вышел на Московское шоссе. <br> Наступление велось силами 50–60 танков при поддержке пехоты и автоматчиков. У 1075-го полка для борьбы с танками имелись лишь два взвода противотанковых ружей и одна противотанковая пушка. Полк понёс тяжёлые потери, две роты были полностью уничтожены. Однако бойцы, используя гранаты и огонь артиллерии, подбили не менее девяти вражеских танков.",
+    date: "17 ноября 1941",
+    title: "Публикация в Красной звезде",
+    text: "Авторы сопоставляют данные «Политдонесения начальника политотдела 316-й стрелковой дивизии Галушко начальнику политотдела 16-й армии Масленову» от 17 ноября 1941 года со статьёй Г. Иванова в газете «Известия» от 18 ноября 1941 года. В донесении отмечается, что вечером 15 ноября был получен приказ о наступлении 316-й стрелковой дивизии. Однако утром 16 ноября противник первым перешёл в наступление на левом фланге в районе 1075-го стрелкового полка. Несмотря на героизм личного состава, противник прорвал оборону, занял Нелидово, Ново-Никольское, Ядрово, Рождествено и вышел на Московское шоссе. <br> Наступление велось силами 50–60 танков при поддержке пехоты и автоматчиков. У 1075-го полка для борьбы с танками имелись лишь два взвода противотанковых ружей и одна противотанковая пушка. Полк понёс тяжёлые потери, две роты были полностью уничтожены. Однако бойцы, используя гранаты и огонь артиллерии, подбили не менее девяти вражеских танков.",
   },
   {
-    date:"1942",
-    title:"Присвоение звания Героя",
-    text:"22 января 1942 года в газете «Красная звезда» появился очерк Василия Кривицкого под названием «О 28 павших героях». В нём впервые были опубликованы фамилии бойцов-панфиловцев, прославившихся своим подвигом в боях под Москвой. Автор обратился к читателям: «Пусть армия и страна узнают наконец их гордые имена». В списке упоминались 28 фамилий, среди которых Клочков Василий Георгиевич, Добробабин Иван Евстафьевич, Шопоков Дуйшенкул, Петренко Григорий Алексеевич, Есибулатов Нарсутбай и другие. <br> Этот очерк получил широкий отклик, и в апреле 1942 года по инициативе командования Западного фронта было возбуждено ходатайство о присвоении героям звания Героя Советского Союза. Указом Президиума Верховного Совета СССР от 21 июля 1942 года это звание было присвоено всем 28 бойцам посмертно. Подвиг панфиловцев стал символом мужества и самоотверженности в Великой Отечественной войне.",
+    date: "1942",
+    title: "Присвоение звания Героя",
+    text: "22 января 1942 года в газете «Красная звезда» появился очерк Василия Кривицкого под названием «О 28 павших героях». В нём впервые были опубликованы фамилии бойцов-панфиловцев, прославившихся своим подвигом в боях под Москвой. Автор обратился к читателям: «Пусть армия и страна узнают наконец их гордые имена». В списке упоминались 28 фамилий, среди которых Клочков Василий Георгиевич, Добробабин Иван Евстафьевич, Шопоков Дуйшенкул, Петренко Григорий Алексеевич, Есибулатов Нарсутбай и другие. <br> Этот очерк получил широкий отклик, и в апреле 1942 года по инициативе командования Западного фронта было возбуждено ходатайство о присвоении героям звания Героя Советского Союза. Указом Президиума Верховного Совета СССР от 21 июля 1942 года это звание было присвоено всем 28 бойцам посмертно. Подвиг панфиловцев стал символом мужества и самоотверженности в Великой Отечественной войне.",
   },
   {
-    date:"1948",
-    title:"Создание мемориала",
-    text:"Память о подвиге панфиловцев бережно сохраняется в разных уголках бывшего СССР. У разъезда Дубосеково, где происходил легендарный бой, создан мемориал «Героям-панфиловцам». В деревне Нелидово установлен памятник и открыт Музей Героев. В Москве их честь увековечена монументом и улицей Героев Панфиловцев. В Алма-Ате их именем назван центральный парк, где расположен монумент, а также одна из главных улиц города. В Бишкеке установлены памятник и назван парк имени Панфилова. Улицы, парки и площади, названные в их честь, есть во многих городах России, Казахстана, Кыргызстана и других стран. Также именами панфиловцев названы перевалы, горные пики и суда.22 января 1942 года в газете «Красная звезда» появился очерк Василия Кривицкого под названием «О 28 павших героях». В нём впервые были опубликованы фамилии бойцов-панфиловцев, прославившихся своим подвигом в боях под Москвой. Автор обратился к читателям: «Пусть армия и страна узнают наконец их гордые имена».",
+    date: "1948",
+    title: "Создание мемориала",
+    text: "Память о подвиге панфиловцев бережно сохраняется в разных уголках бывшего СССР. У разъезда Дубосеково, где происходил легендарный бой, создан мемориал «Героям-панфиловцам». В деревне Нелидово установлен памятник и открыт Музей Героев. В Москве их честь увековечена монументом и улицей Героев Панфиловцев. В Алма-Ате их именем назван центральный парк, где расположен монумент, а также одна из главных улиц города. В Бишкеке установлены памятник и назван парк имени Панфилова. Улицы, парки и площади, названные в их честь, есть во многих городах России, Казахстана, Кыргызстана и других стран. Также именами панфиловцев названы перевалы, горные пики и суда.22 января 1942 года в газете «Красная звезда» появился очерк Василия Кривицкого под названием «О 28 павших героях». В нём впервые были опубликованы фамилии бойцов-панфиловцев, прославившихся своим подвигом в боях под Москвой. Автор обратился к читателям: «Пусть армия и страна узнают наконец их гордые имена».",
   },
   {
-    date:"1966",
-    title:"Фильм 28 Панфиловцев ",
-    text:"В 1966 году был снят фильм *«За нами Москва»*, героическая киноповесть, основанная на материалах и книгах Бауыржана Момышулы — одного из участников знаменитой Панфиловской дивизии. Сценарий фильма был написан по его роману «За нами Москва», который отражает воспоминания Момышулы о войне. Изначально фильм был задуман по мотивам произведения Александра Бека «Волоколамское шоссе», однако, после того как часть фильма была отснята, Бек выразил недовольство, что в фильме слишком сильно подчёркнут героизм других народов, а не только русских. Это вызвало необходимость пересмотра сценария, и режиссёр Мажит Бегалин обратился к Момышулы, который предоставил свой роман в качестве основы. <br> Фильм рассказывает о подвиге Панфиловской дивизии, которая сражалась в ноябре 1941 года на Волоколамском направлении под Москвой, остановив наступление немецких войск. Бауыржан Момышулы, командующий батальоном, сыграл ключевую роль в этом бою, задержав фашистов на три дня и успешно выведя батальон из окружения.",
+    date: "1966",
+    title: "Фильм 28 Панфиловцев ",
+    text: "В 1966 году был снят фильм *«За нами Москва»*, героическая киноповесть, основанная на материалах и книгах Бауыржана Момышулы — одного из участников знаменитой Панфиловской дивизии. Сценарий фильма был написан по его роману «За нами Москва», который отражает воспоминания Момышулы о войне. Изначально фильм был задуман по мотивам произведения Александра Бека «Волоколамское шоссе», однако, после того как часть фильма была отснята, Бек выразил недовольство, что в фильме слишком сильно подчёркнут героизм других народов, а не только русских. Это вызвало необходимость пересмотра сценария, и режиссёр Мажит Бегалин обратился к Момышулы, который предоставил свой роман в качестве основы. <br> Фильм рассказывает о подвиге Панфиловской дивизии, которая сражалась в ноябре 1941 года на Волоколамском направлении под Москвой, остановив наступление немецких войск. Бауыржан Момышулы, командующий батальоном, сыграл ключевую роль в этом бою, задержав фашистов на три дня и успешно выведя батальон из окружения.",
   },
-    {
-    date:"2015",
-    title:"Современный фильм",
-    text:"«Двадцать восемь панфиловцев» — российский художественный фильм, снятый Андреем Шальопой и Кимом Дружининым, посвящённый подвигу советских солдат при обороне Москвы в 1941 году. Фильм рассказывает о действиях бойцов 316-й стрелковой дивизии под командованием генерала И. В. Панфилова, которые 16 ноября 1941 года на разъезде Дубосеково отражали атаки немецких танков, прорывавшихся к Москве. <br> Для производства картины был использован краудфандинг, и в итоге собрали 34 746 062 рубля. Позже к финансированию присоединились Министерства культуры России и Казахстана. В процессе съёмок финансовую и организационную поддержку оказывала компания Gaijin Entertainment. Премьера фильма состоялась 16 ноября 2016 года в Волоколамске, а широкая премьера — 24 ноября. В мае 2020 года была выложена полная версия фильма в открытый доступ. <br> Производство фильма сопровождалось обсуждениями его исторической достоверности в СМИ и блогах.",
-    }
-  ]
-
+  {
+    date: "2015",
+    title: "Современный фильм",
+    text: "«Двадцать восемь панфиловцев» — российский художественный фильм, снятый Андреем Шальопой и Кимом Дружининым, посвящённый подвигу советских солдат при обороне Москвы в 1941 году. Фильм рассказывает о действиях бойцов 316-й стрелковой дивизии под командованием генерала И. В. Панфилова, которые 16 ноября 1941 года на разъезде Дубосеково отражали атаки немецких танков, прорывавшихся к Москве. <br> Для производства картины был использован краудфандинг, и в итоге собрали 34 746 062 рубля. Позже к финансированию присоединились Министерства культуры России и Казахстана. В процессе съёмок финансовую и организационную поддержку оказывала компания Gaijin Entertainment. Премьера фильма состоялась 16 ноября 2016 года в Волоколамске, а широкая премьера — 24 ноября. В мае 2020 года была выложена полная версия фильма в открытый доступ. <br> Производство фильма сопровождалось обсуждениями его исторической достоверности в СМИ и блогах.",
+  },
+];
 
 const searchContainer = document.querySelector(".WP-SearchContainer");
 const searchInput = document.querySelector(".WP-SearchInput");
@@ -1674,51 +1673,310 @@ const TLModalValue = (data) => ` <div id="TL-M-container">
           <h2 id="TL-M-date">${data.date}</h2>
           <h1 id="TL-M-title">${data.title}</h1>
           <p id="TL-M-text">${data.text}</p>
-        </div>`
-        
-function resourcesWindow(n){
-  console.log(sources[n].title)
-  document.getElementById("TL-modal").innerHTML = TLModalValue(sources[n])
-  document.getElementById("TL-modal").style.display = "block"
+        </div>`;
+
+function resourcesWindow(n) {
+  console.log(sources[n].title);
+  document.getElementById("TL-modal").innerHTML = TLModalValue(sources[n]);
+  document.getElementById("TL-modal").style.display = "block";
 }
 
-function TLCloser(){
-  document.getElementById("TL-modal").style.display="none"
+function TLCloser() {
+  document.getElementById("TL-modal").style.display = "none";
 }
 
-function TLAnimation(n){
-    if (n==0){
-      var counter=0
-      document.getElementById("TL-modal").style.display="flex"
-        var TLmodalclearer = setInterval(() => {
-          counter += 0.01;
-          document.getElementById("TL-modal").style.opacity = counter.toString();
-          // console.log(counter);
-          if(counter>1){
-            clearInterval(TLmodalclearer)
-          }
-        }, 5);
-    }
-    else{
-      var counter=1
-        var TLmodalclearer = setInterval(() => {
-          counter -= 0.01;
-          document.getElementById("TL-modal").style.opacity = counter.toString();
-          // console.log(counter);
-          if(counter<0){
-            clearInterval(TLmodalclearer)
-            document.getElementById("TL-modal").style.opacity = "0"
-            document.getElementById("TL-modal").style.display="none";
-          }
-        }, 5);
-    }    
+function TLAnimation(n) {
+  if (n == 0) {
+    var counter = 0;
+    document.getElementById("TL-modal").style.display = "flex";
+    var TLmodalclearer = setInterval(() => {
+      counter += 0.01;
+      document.getElementById("TL-modal").style.opacity = counter.toString();
+      // console.log(counter);
+      if (counter > 1) {
+        clearInterval(TLmodalclearer);
+      }
+    }, 5);
+  } else {
+    var counter = 1;
+    var TLmodalclearer = setInterval(() => {
+      counter -= 0.01;
+      document.getElementById("TL-modal").style.opacity = counter.toString();
+      // console.log(counter);
+      if (counter < 0) {
+        clearInterval(TLmodalclearer);
+        document.getElementById("TL-modal").style.opacity = "0";
+        document.getElementById("TL-modal").style.display = "none";
+      }
+    }, 5);
+  }
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
   AOS.init({
     duration: 1000, // Animation duration
-    easing: 'ease-in-out',
+    easing: "ease-in-out",
     once: true, // Whether animation should happen only once
   });
+});
+document
+  .getElementById("TextSpeechButton")
+  .addEventListener("click", function () {
+    // Get the selected text
+    const selectedText = window.getSelection().toString();
+
+    // If no text is selected, use a default text
+    const textToRead =
+      selectedText || document.getElementById("text-to-read").textContent;
+
+    if (textToRead.trim()) {
+      const speech = new SpeechSynthesisUtterance();
+      speech.text = textToRead;
+      speech.lang = "ru-RU"; // Set language to Russian
+      window.speechSynthesis.speak(speech);
+    } else {
+      alert("Пожалуйста, выберите текст для озвучивания.");
+    }
+  });
+document.addEventListener("contextmenu", function (e) {
+  // Убираем блокировку, если она есть
+  e.preventDefault();
+});
+
+const Keyboard = {
+  elements: {
+    main: null,
+    keysContainer: null,
+    keys: [],
+  },
+
+  eventHandlers: {
+    oninput: null,
+    onclose: null,
+  },
+
+  properties: {
+    value: "",
+    capsLock: false,
+  },
+
+  init() {
+    // Create main elements
+    this.elements.main = document.createElement("div");
+    this.elements.keysContainer = document.createElement("div");
+
+    // Setup main elements
+    this.elements.main.classList.add("keyboard", "keyboard--hidden");
+    this.elements.keysContainer.classList.add("keyboard__keys");
+    this.elements.keysContainer.appendChild(this._createKeys());
+
+    this.elements.keys =
+      this.elements.keysContainer.querySelectorAll(".keyboard__key");
+
+    // Add to DOM
+    this.elements.main.appendChild(this.elements.keysContainer);
+    document.body.appendChild(this.elements.main);
+
+    // Automatically use keyboard for elements with .use-keyboard-input
+    document.querySelectorAll(".use-keyboard-input").forEach((element) => {
+      element.addEventListener("focus", () => {
+        this.open(element.value, (currentValue) => {
+          element.value = currentValue;
+        });
+      });
+    });
+  },
+
+  _createKeys() {
+    const fragment = document.createDocumentFragment();
+    const keyLayout = [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "0",
+      "backspace",
+      "й",
+      "ц",
+      "у",
+      "к",
+      "е",
+      "н",
+      "г",
+      "ш",
+      "щ",
+      "з",
+      "х",
+      "caps",
+      "ф",
+      "ы",
+      "в",
+      "а",
+      "п",
+      "р",
+      "о",
+      "л",
+      "д",
+      "enter",
+      "done",
+      "я",
+      "ч",
+      "с",
+      "м",
+      "и",
+      "т",
+      "ь",
+      "б",
+      "ю",
+      ",",
+      ".",
+      "?",
+      "space",
+    ];
+
+    // Creates HTML for an icon
+    const createIconHTML = (icon_name) => {
+      return `<i class="material-icons">${icon_name}</i>`;
+    };
+
+    keyLayout.forEach((key) => {
+      const keyElement = document.createElement("button");
+      const insertLineBreak =
+        ["backspace", "з", "enter", "?"].indexOf(key) !== -1;
+
+      // Add attributes/classes
+      keyElement.setAttribute("type", "button");
+      keyElement.classList.add("keyboard__key");
+
+      switch (key) {
+        case "backspace":
+          keyElement.classList.add("keyboard__key--wide");
+          keyElement.innerHTML = createIconHTML("Стереть");
+
+          keyElement.addEventListener("click", () => {
+            this.properties.value = this.properties.value.substring(
+              0,
+              this.properties.value.length - 1
+            );
+            this._triggerEvent("oninput");
+          });
+
+          break;
+
+        case "caps":
+          keyElement.classList.add(
+            "keyboard__key--wide",
+            "keyboard__key--activatable"
+          );
+          keyElement.innerHTML = createIconHTML("Капс");
+
+          keyElement.addEventListener("click", () => {
+            this._toggleCapsLock();
+            keyElement.classList.toggle(
+              "keyboard__key--active",
+              this.properties.capsLock
+            );
+          });
+
+          break;
+
+        case "enter":
+          keyElement.classList.add("keyboard__key--wide");
+          keyElement.innerHTML = createIconHTML("Ентер");
+
+          keyElement.addEventListener("click", () => {
+            this.properties.value += "\n";
+            this._triggerEvent("oninput");
+          });
+
+          break;
+
+        case "space":
+          keyElement.classList.add("keyboard__key--extra-wide");
+          keyElement.innerHTML = createIconHTML("Пробел, Лева лох");
+
+          keyElement.addEventListener("click", () => {
+            this.properties.value += " ";
+            this._triggerEvent("oninput");
+          });
+
+          break;
+
+        case "done":
+          keyElement.classList.add(
+            "keyboard__key--wide",
+            "keyboard__key--dark"
+          );
+          keyElement.innerHTML = createIconHTML("Закрыть");
+
+          keyElement.addEventListener("click", () => {
+            this.close();
+            this._triggerEvent("onclose");
+          });
+
+          break;
+
+        default:
+          keyElement.textContent = key.toLowerCase();
+
+          keyElement.addEventListener("click", () => {
+            this.properties.value += this.properties.capsLock
+              ? key.toUpperCase()
+              : key.toLowerCase();
+            this._triggerEvent("oninput");
+          });
+
+          break;
+      }
+
+      fragment.appendChild(keyElement);
+
+      if (insertLineBreak) {
+        fragment.appendChild(document.createElement("br"));
+      }
+    });
+
+    return fragment;
+  },
+
+  _triggerEvent(handlerName) {
+    if (typeof this.eventHandlers[handlerName] == "function") {
+      this.eventHandlers[handlerName](this.properties.value);
+    }
+  },
+
+  _toggleCapsLock() {
+    this.properties.capsLock = !this.properties.capsLock;
+
+    for (const key of this.elements.keys) {
+      if (key.childElementCount === 0) {
+        key.textContent = this.properties.capsLock
+          ? key.textContent.toUpperCase()
+          : key.textContent.toLowerCase();
+      }
+    }
+  },
+
+  open(initialValue, oninput, onclose) {
+    this.properties.value = initialValue || "";
+    this.eventHandlers.oninput = oninput;
+    this.eventHandlers.onclose = onclose;
+    this.elements.main.classList.remove("keyboard--hidden");
+  },
+
+  close() {
+    this.properties.value = "";
+    this.eventHandlers.oninput = oninput;
+    this.eventHandlers.onclose = onclose;
+    this.elements.main.classList.add("keyboard--hidden");
+  },
+};
+
+window.addEventListener("DOMContentLoaded", function () {
+  Keyboard.init();
 });

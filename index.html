@@ -25,17 +25,19 @@
     <section id="WelcomePage">
       <header>
         <h1>ITLyceum54</h1>
-        <nav>
+        <nav style="margin-left: 5vw">
           <a href="">Главная</a>
           <a href="#GreatFeat">Лидеры</a>
           <a href="#MembersList">Панфиловцы</a>
-          <a href="#MembersAwards">Список</a>
+          <a href="#TL-Timeline">Материалы</a>
+          <a href="#ChronologyOfBattles">Хронология</a>
         </nav>
         <div class="WP-SearchContainer">
           <input
             type="text"
-            class="WP-SearchInput"
+            class="WP-SearchInput use-keyboard-input"
             placeholder="Навигация по главной странице"
+            autofocus
           />
           <button class="WP-SearchBtn">
             <span class="icon"
@@ -96,7 +98,7 @@
                 командовал 8-й гвардейской стрелковой дивизией во время битвы за
                 Москву. Панфилов погиб 18 ноября 1941 года в бою под Москвой.
               </p>
-              <button>Далее</button>
+              <button onclick="descriptionPage(26)">Далее</button>
             </div>
           </div>
         </div>
@@ -112,7 +114,7 @@
                 Великой Отечественной войны. В июне 1941 года он был призван в
                 Красную Армию и уже в октябре оказался на передовой.
               </p>
-              <button>Далее</button>
+              <button onclick="descriptionPage(15)">Далее</button>
             </div>
           </div>
           <div class="GF-C-Image"></div>
@@ -130,7 +132,7 @@
                 у разъезда Дубосеково, который вошел в историю как подвиг 28
                 героев-панфиловцев.
               </p>
-              <button>Далее</button>
+              <button onclick="descriptionPage(0)">Далее</button>
             </div>
           </div>
         </div>
@@ -148,31 +150,44 @@
         "
       >
         <div id="ML-Block">
-          <input type="text" id="ML-Input" placeholder="Поиск по слову" />
+          <input
+            type="text"
+            id="ML-Input"
+            placeholder="Поиск по наполнению карточек"
+          />
           <button id="ML-ButtonSearch">Искать</button>
           <button id="ML-ResetButton">Вернуть все карточки</button>
         </div>
-    
-        <div id="ML-C-Cards">
-          <!-- Карточки будут добавлены сюда -->
-        </div>
+
+        <div id="ML-C-Cards"></div>
+      </div>
     </section>
 
     <section id="TL-Timeline">
-      <h1 id="TL-Title">Сопутствующие события</h1>
+      <h1 id="TL-Title">Сопутствующие материалы</h1>
       <div id="TL-Container">
         <!-- Timeline Events -->
-        <div class="TL-Event" data-aos="fade-up" onclick="resourcesWindow(0), TLAnimation(0)">
+        <div
+          class="TL-Event"
+          data-aos="fade-up"
+          onclick="resourcesWindow(0), TLAnimation(0)"
+        >
           <div class="TL-Date">15 ноября 1941</div>
           <div class="TL-Content">
             <h2 class="TL-Title">Оборона под Дубосеково</h2>
             <p class="TL-Description">
-              28 панфиловцев вступили в бой с немецкими танками на подступах к Москве.
+              28 панфиловцев вступили в бой с немецкими танками на подступах к
+              Москве.
             </p>
           </div>
         </div>
-  
-        <div class="TL-Event" data-aos="fade-up" data-aos-delay="100"  onclick="resourcesWindow(1), TLAnimation(0)">
+
+        <div
+          class="TL-Event"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          onclick="resourcesWindow(1), TLAnimation(0)"
+        >
           <div class="TL-Date">17 ноября 1941</div>
           <div class="TL-Content">
             <h2 class="TL-Title">Публикация в «Красной звезде»</h2>
@@ -181,18 +196,29 @@
             </p>
           </div>
         </div>
-  
-        <div class="TL-Event" data-aos="fade-up" data-aos-delay="200"  onclick="resourcesWindow(2), TLAnimation(0)">
+
+        <div
+          class="TL-Event"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          onclick="resourcesWindow(2), TLAnimation(0)"
+        >
           <div class="TL-Date">1942</div>
           <div class="TL-Content">
             <h2 class="TL-Title">Присвоение звания Героя</h2>
             <p class="TL-Description">
-              Всем бойцам Панфиловской дивизии присвоено звание Героя Советского Союза посмертно.
+              Всем бойцам Панфиловской дивизии присвоено звание Героя Советского
+              Союза посмертно.
             </p>
           </div>
         </div>
-  
-        <div class="TL-Event" data-aos="fade-up" data-aos-delay="300"  onclick="resourcesWindow(3), TLAnimation(0)">
+
+        <div
+          class="TL-Event"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          onclick="resourcesWindow(3), TLAnimation(0)"
+        >
           <div class="TL-Date">1948</div>
           <div class="TL-Content">
             <h2 class="TL-Title">Создание мемориала</h2>
@@ -201,47 +227,173 @@
             </p>
           </div>
         </div>
-  
-        <div class="TL-Event" data-aos="fade-up" data-aos-delay="400"  onclick="resourcesWindow(4), TLAnimation(0)">
+
+        <div
+          class="TL-Event"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          onclick="resourcesWindow(4), TLAnimation(0)"
+        >
           <div class="TL-Date">1966</div>
           <div class="TL-Content">
             <h2 class="TL-Title">Фильм «28 Панфиловцев»</h2>
             <p class="TL-Description">
-              Выпущен документальный фильм о героическом подвиге защитников Москвы.
+              Выпущен документальный фильм о героическом подвиге защитников
+              Москвы.
             </p>
           </div>
         </div>
-  
-        <div class="TL-Event" data-aos="fade-up" data-aos-delay="500"  onclick="resourcesWindow(5), TLAnimation(0)">
+
+        <div
+          class="TL-Event"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          onclick="resourcesWindow(5), TLAnimation(0)"
+        >
           <div class="TL-Date">2015</div>
           <div class="TL-Content">
             <h2 class="TL-Title">Современный фильм</h2>
             <p class="TL-Description">
-              Премьера художественного фильма «28 Панфиловцев», рассказывающего о событиях тех дней.
+              Премьера художественного фильма «28 Панфиловцев», рассказывающего
+              о событиях тех дней.
             </p>
           </div>
         </div>
       </div>
     </section>
+
     <section id="TL-modal">
-        <div id="TL-M-container">
-          <button id="TL-exit" onclick="TLCloser()">
-            <img src="./images/exit (1).png">
-          </button>
-          <h2 id="TL-M-date"></h2>
-          <h1 id="TL-M-title"></h1>
-          <p id="TL-M-text"></p>
-        </div>
+      <div id="TL-M-container">
+        <button id="TL-exit" onclick="TLCloser()">
+          <img src="./images/exit (1).png" />
+        </button>
+        <h2 id="TL-M-date"></h2>
+        <h1 id="TL-M-title"></h1>
+        <p id="TL-M-text"></p>
+      </div>
     </section>
+
+    <section class="ChronologyOfBattles" id="ChronologyOfBattles">
+      <h1 class="CHB-Article">ХРОНОЛОГИЯ БОЯ</h1>
+      <div id="programmTable">
+        <div class="programmTableFloor">
+          <div class="TableBox" style="text-align: end">
+            <h1>Наступление немецких войск</h1>
+            <h2>
+              Немецкая 2-я танковая дивизия начинает наступление на советские
+              позиции в районе Волоколамска, пытаясь прорвать фронт.
+            </h2>
+          </div>
+          <div class="tableImg1" style="margin-left: 1vw"><hr /></div>
+          <div class="tableVerticalImg tableVerticalImgFirst"></div>
+          <div class="tableImg1" style="margin-right: 1vw"></div>
+          <div class="TableBox"></div>
+        </div>
+        <div class="programmTableFloor">
+          <div class="TableBox"></div>
+          <div class="tableImg1" style="margin-left: 1vw"></div>
+          <div class="tableVerticalImg"></div>
+          <div class="tableImg1" style="margin-right: 1vw"><hr /></div>
+          <div class="TableBox">
+            <h1>Противостояние с немецкой танковой дивизией</h1>
+            <h2>
+              Немецкие войска атакуют с танками, панфиловцы уничтожают несколько
+              машин, сдерживая наступление.
+            </h2>
+          </div>
+        </div>
+        <div class="programmTableFloor">
+          <div class="TableBox" style="text-align: end">
+            <h1>Первые потери</h1>
+            <h2>
+              Малочисленная группа бойцов, возглавляемая политруком Василием
+              Клочковым, становится символом героизма.
+            </h2>
+          </div>
+          <div class="tableImg1" style="margin-left: 1vw"><hr /></div>
+          <div class="tableVerticalImg"></div>
+          <div class="tableImg1" style="margin-right: 1vw"></div>
+          <div class="TableBox"></div>
+        </div>
+        <div class="programmTableFloor">
+          <div class="TableBox"></div>
+          <div class="tableImg1" style="margin-left: 1vw"></div>
+          <div class="tableVerticalImg"></div>
+          <div class="tableImg1" style="margin-right: 1vw"><hr /></div>
+          <div class="TableBox">
+            <h1>Подбитые танки</h1>
+            <h2>
+              Панфиловцы уничтожают несколько вражеских танков, несмотря на
+              численное превосходство противника.
+            </h2>
+          </div>
+        </div>
+        <div class="programmTableFloor">
+          <div class="TableBox" style="text-align: end">
+            <h1>Артиллерийские обстрелы</h1>
+            <h2>
+              Советские позиции подвергаются интенсивным артиллерийским ударам
+              со стороны немецкой артиллерии.
+            </h2>
+          </div>
+          <div class="tableImg1" style="margin-left: 1vw"><hr /></div>
+          <div class="tableVerticalImg"></div>
+          <div class="tableImg1" style="margin-right: 1vw"></div>
+          <div class="TableBox"></div>
+        </div>
+        <div class="programmTableFloor">
+          <div class="TableBox"></div>
+          <div class="tableImg1" style="margin-left: 1vw"></div>
+          <div class="tableVerticalImg"></div>
+          <div class="tableImg1" style="margin-right: 1vw"><hr /></div>
+          <div class="TableBox">
+            <h1>Продолжение обороны</h1>
+            <h2>
+              Панфиловцы не сдают позиции и продолжают жесткое сопротивление
+              несмотря на сильное давление.
+            </h2>
+          </div>
+        </div>
+        <div class="programmTableFloor">
+          <div class="TableBox" style="text-align: end">
+            <h1>Победа</h1>
+            <h2>
+              Панфиловцы сдерживают наступление немцев, бойцы получили звание
+              Героев Советского Союза за свою доблесть и стойкость в бою.
+            </h2>
+          </div>
+          <div class="tableImg1" style="margin-left: 1vw"><hr /></div>
+          <div class="tableVerticalImg tableVerticalImgLast"></div>
+          <div class="tableImg1" style="margin-right: 1vw"></div>
+          <div class="TableBox"></div>
+        </div>
+      </div>
+    </section>
+
     <section id="Footer">
-      <footer>
-        <h1>IT Lyceum 54</h1>
-        <nav>
-          <a href="">Home</a>
-          <a href="">Facts</a>
-          <a href="">Members</a>
-          <a href="">List</a>
-        </nav>
+      <footer class="footer">
+        <div class="F-Waves">
+          <div class="F-wave" id="wave2"></div>
+          <div class="F-wave" id="wave1"></div>
+          <div class="F-wave" id="wave4"></div>
+          <div class="F-wave" id="wave3"></div>
+        </div>
+        <ul class="F-Menu">
+          <li class="F-M-item"><a class="F-M-link" href="#">Главная</a></li>
+          <li class="F-M-item">
+            <a class="F-M-link" href="#GreatFeat">Лидеры</a>
+          </li>
+          <li class="F-M-item">
+            <a class="F-M-link" href="#MembersList">Панфиловцы</a>
+          </li>
+          <li class="F-M-item">
+            <a class="F-M-link" href="#TL-Timeline">Сопутствующие материалы</a>
+          </li>
+          <li class="F-M-item">
+            <a class="F-M-link" href="#ChronologyOfBattles">Хронология</a>
+          </li>
+        </ul>
+        <p>&copy;2024 Злавдинов Леким | Егорин Лев</p>
       </footer>
     </section>
   </body>

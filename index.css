@@ -4,8 +4,9 @@ html {
 body {
   background-color: rgb(20, 20, 20);
   margin: 0;
-  user-select: none;
+  /* user-select: none; */
   behavior: smooth;
+  /* overflow-x: hidden; */
 }
 h1,
 h2,
@@ -13,6 +14,23 @@ p,
 button {
   margin: 0;
   padding: 0;
+}
+body::-webkit-scrollbar {
+  height: 1vw; /* Толщина скроллбара */
+  background-color: #2a2a2a; /* Цвет фона скроллбара */
+  border-radius: 0.5vw;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #f9202f; /* Основной цвет ползунка */
+  border-radius: 0.5vw;
+  border: 0.2vw solid #2a2a2a; /* Обводка вокруг ползунка */
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #ff4350; /* Цвет при наведении */
+}
+body::-webkit-scrollbar-track {
+  background-color: #444; /* Цвет трека (дорожки) */
+  border-radius: 0.5vw;
 }
 
 /* TextSpeech */
@@ -33,7 +51,7 @@ button {
 #TextSpeech button {
   width: 10vw;
   height: 2.8vw;
-  background-color: #d41010;
+  background-color: #f9202f;
   border: 0;
   border-radius: 100vw;
   font-size: 1vw;
@@ -43,7 +61,7 @@ button {
 }
 #TextSpeech button:hover {
   scale: 1.05;
-  box-shadow: 0px 0px 2vw 0.8vw #d4101073;
+  box-shadow: 0px 0px 2vw 0.8vw #f9202f73;
   color: rgb(216, 216, 216);
 }
 #TextSpeech button:active {
@@ -82,6 +100,7 @@ button {
 #WelcomePage header nav {
   display: flex;
   gap: 2vw;
+  user-select: none;
 }
 #WelcomePage header nav a {
   font-size: 1.5vw;
@@ -172,7 +191,7 @@ button {
 #WP-С-Text button {
   width: 20vw;
   height: 4vw;
-  background-color: #d41010b5;
+  background-color: #f9202fb5;
   border: 0;
   border-radius: 1.5vw;
   font-size: 1.5vw;
@@ -181,7 +200,7 @@ button {
 }
 #WP-С-Text button:hover {
   scale: 1.05;
-  box-shadow: 0px 0px 2vw 0.8vw #d4101073;
+  box-shadow: 0px 0px 2vw 0.8vw #f9202f73;
   color: rgb(216, 216, 216);
 }
 
@@ -274,7 +293,7 @@ button {
   font-size: 1.9vw;
   font-family: "Lora", serif;
   font-weight: 900;
-  color: #d41010;
+  color: #f9202f;
   z-index: 1;
 }
 .GF-C-T-Main h1 {
@@ -288,17 +307,18 @@ button {
 .GF-C-T-Main button {
   width: 18vw;
   height: 4vw;
-  background-color: #d41010;
+  background-color: #f9202f;
   border: 0;
   border-radius: 1vw;
   font-size: 1.5vw;
   font-family: "Lora";
   color: aliceblue;
   transition: 200ms ease-in-out;
+  user-select: none;
 }
 .GF-C-T-Main button:hover {
   scale: 1.05;
-  box-shadow: 0px 0px 2vw 0.8vw #d4101073;
+  box-shadow: 0px 0px 2vw 0.8vw #f9202f73;
   color: rgb(216, 216, 216);
 }
 
@@ -313,7 +333,7 @@ button {
 #ML-Button {
   width: 28vw;
   height: 5vw;
-  background-color: #d41010;
+  background-color: #f9202f;
   position: relative;
   top: 3.5vw;
   display: flex;
@@ -357,16 +377,17 @@ button {
   scale: 1.05;
 }
 #ML-Container {
-  width: 100vw;
+  width: 100%;
   max-height: 0vw;
+  /* height: 5vw; */
   background-color: rgb(35, 35, 35);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 2vw;
-  padding: 7vw 0 7vw 0;
-  border-radius: 2vw;
+  padding: 6vw 0 5vw 0;
+  border-radius: 3vw;
   font-size: 1.8vw;
   font-family: monospace;
   color: aliceblue;
@@ -397,7 +418,7 @@ button {
   padding: 0 1vw;
   border: none;
   border-radius: 0.3vw;
-  background-color: #d41010;
+  background-color: #f9202f;
   color: white;
   cursor: pointer;
   transition: 200ms ease-in-out;
@@ -405,7 +426,7 @@ button {
 #ML-ButtonSearch:hover,
 #ML-ResetButton:hover {
   scale: 1.05;
-  box-shadow: 0px 0px 2vw 0.8vw #d4101073;
+  box-shadow: 0px 0px 2vw 0.8vw #f9202f73;
 }
 #ML-ButtonSearch {
   border-radius: 0 0.5vw 0.5vw 0;
@@ -431,7 +452,7 @@ button {
 .ML-C-Name {
   height: 50%;
   width: 100%;
-  /* background-color: #d41010; */
+  /* background-color: #f9202f; */
   display: flex;
   justify-content: left;
   align-items: center;
@@ -484,7 +505,7 @@ button {
 .ML-C-I-Button {
   width: 10vw;
   height: 3vw;
-  background-color: #d41010;
+  background-color: #f9202f;
   border: 0;
   border-radius: 10vw;
   font-size: 1vw;
@@ -499,30 +520,29 @@ button {
 }
 .ML-C-I-Button:hover {
   scale: 1.05;
-  box-shadow: 0px 0px 2vw 0.8vw #d4101073;
+  box-shadow: 0px 0px 2vw 0.8vw #f9202f73;
   color: rgb(216, 216, 216);
 }
 
- /* Timeline */
+/* Timeline */
 #TL-Timeline {
-  padding: 4vw 2vw;
+  padding: 4vw 0vw;
   max-width: 120vw;
   margin: 0 auto;
   text-align: center;
   font-family: Montserrat;
 }
-
 #TL-Title {
-  font-size: 4.5vw;
-  color: #e63946;
+  font-size: 3vw;
+  color: #f9202f;
   margin-bottom: 3vw;
+  margin-top: 5vw;
   text-transform: uppercase;
   letter-spacing: 0.2vw;
 }
-
 #TL-Container {
   display: flex;
-  width: 100vw;
+  /* width: 100vw; */
   height: 17vw;
   justify-content: space-between;
   align-items: flex-start;
@@ -533,29 +553,24 @@ button {
   padding-top: 1vw;
   scroll-behavior: smooth;
 }
-
 /* Стилизация скроллбара (WebKit) */
 #TL-Container::-webkit-scrollbar {
   height: 1vw; /* Толщина скроллбара */
   background-color: #2a2a2a; /* Цвет фона скроллбара */
   border-radius: 0.5vw;
 }
-
 #TL-Container::-webkit-scrollbar-thumb {
-  background-color: #e63946; /* Основной цвет ползунка */
+  background-color: #f9202f; /* Основной цвет ползунка */
   border-radius: 0.5vw;
   border: 0.2vw solid #2a2a2a; /* Обводка вокруг ползунка */
 }
-
 #TL-Container::-webkit-scrollbar-thumb:hover {
-  background-color: #ff6b6b; /* Цвет при наведении */
+  background-color: #ff4350; /* Цвет при наведении */
 }
-
 #TL-Container::-webkit-scrollbar-track {
   background-color: #444; /* Цвет трека (дорожки) */
   border-radius: 0.5vw;
 }
-
 .TL-Event {
   flex: 0 0 20vw;
   height: 16vw; /* Устанавливаем фиксированную высоту */
@@ -572,37 +587,31 @@ button {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
-
 .TL-Content {
   text-align: left;
   flex-grow: 1; /* Контент растягивается по высоте, если нужно */
   overflow: hidden; /* Скрываем лишнее содержимое */
 }
-
 .TL-Event:hover {
   transform: scale(1.05);
   box-shadow: 0 0.6vw 1.2vw rgba(0, 0, 0, 0.7);
 }
-
 .TL-Date {
   font-size: 1.5vw;
   font-weight: bold;
-  color: #e63946;
+  color: #f9202f;
   margin-bottom: 1vw;
 }
-
 .TL-Title {
   font-size: 1.8vw;
   margin-bottom: 1vw;
   color: #f4f4f4;
 }
-
 .TL-Description {
   font-size: 1.2vw;
   line-height: 1.5;
   color: #d3d3d3;
 }
-
 /* #TL-Container::before {
   content: '';
   position: absolute;
@@ -613,49 +622,45 @@ button {
   background-color: #e63946;
   z-index: 0;
 } */
-
 .TL-Event::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: -1vw;
   width: 1.5vw;
   height: 1.5vw;
-  background-color: #e63946;
+  background-color: #f9202f;
   border: 0.3vw solid #2a2a2a;
   border-radius: 50%;
   z-index: 2;
   transform: translateY(-50%);
 }
-
 .TL-Event:first-child::before {
   left: 0;
 }
 
-
-#TL-modal{
+#TL-modal {
   display: none;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background-color: #2a2a2a;
   width: 70vw;
   height: 40vw;
-  z-index: 2;
+  z-index: 5;
   border-radius: 2vw;
   opacity: 0;
   box-shadow: 0vw 0vw 1.3vw 0vw rgb(82, 82, 82);
-
 }
-#TL-M-container{
+#TL-M-container {
   margin: 3vw;
   display: flex;
   flex-direction: column;
   gap: 1vw;
   color: white;
 }
-#TL-M-container button{
+#TL-M-container button {
   background: transparent;
   border: transparent;
   position: absolute;
@@ -665,67 +670,291 @@ button {
   right: 3vw;
   transition: 200ms ease-in-out;
 }
-#TL-M-container button :hover{
+#TL-M-container button :hover {
   scale: 1.5;
-  filter: drop-shadow(0px 0px 16px #d4101073);
-    color: rgb(216, 216, 216);
+  filter: drop-shadow(0px 0px 16px #f9202f73);
+  color: rgb(216, 216, 216);
 }
-#TL-exit img{
+#TL-exit img {
   width: 5vw;
   transition: 200ms ease-in-out;
 }
-#TL-M-container img :hover{
+#TL-M-container img :hover {
   width: 1.5;
-  filter: drop-shadow(0px 0px 16px #d4101073);
-    color: rgb(216, 216, 216);
+  filter: drop-shadow(0px 0px 16px #f9202f73);
+  color: rgb(216, 216, 216);
 }
-#TL-M-container h2{
+#TL-M-container h2 {
   margin: 0vw;
-  color:#e63946;
+  color: #e63946;
   font-size: 2vw;
   font-family: Montserrat;
 }
-#TL-M-container h1{
+#TL-M-container h1 {
   margin: 0vw;
   color: white;
   font-size: 3vw;
   font-family: Montserrat;
 }
-#TL-M-container p{
+#TL-M-container p {
   margin: 0vw;
   color: white;
   font-size: 1.5vw;
   font-family: Montserrat;
 }
-/* Footer */
-#Footer {
-  height: 7vw;
-}
-#Footer footer {
-  height: 100%;
+
+#programm {
+  height: 65vw;
+  width: 65vw;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  font-family: Roboto;
+  padding-bottom: 10vw;
 }
-#Footer footer h1 {
-  font-size: 2vw;
-  font-family: monospace;
-  color: aliceblue;
-}
-#Footer footer nav {
+#programmTable {
   display: flex;
-  gap: 5vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-#Footer footer nav a {
+.CHB-Article {
+  width: 100%;
+  text-align: center;
+  font-size: 4vw;
+  font-family: "Montserrat";
+  color: #f9202f;
+  margin: 3vw 0 3vw 0;
+}
+#programmHeading {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  gap: 3vw;
+}
+.programmTableFloor {
+  display: flex;
+  height: 6vw;
+}
+.programmTableFloor div {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+}
+.TableBox {
+  width: 40vw;
+  height: 6vw;
+  gap: 20%;
+}
+.TableBox p {
+  color: aliceblue;
+  font-size: 0.8vw;
+  opacity: 0.5;
+}
+.TableBox h1 {
+  font-size: 1.7vw;
+  font-family: "Source Code Pro";
+  color: #f9202f;
+}
+.TableBox h2 {
+  color: aliceblue;
+  font-family: "Montserrat";
   font-size: 1.4vw;
-  font-family: monospace;
-  color: rgba(240, 248, 255, 0.846);
-  text-decoration: none;
-  transition: 100ms ease-in-out;
+  font-weight: 100;
 }
-#Footer footer nav a:hover {
-  scale: 1.1;
-  color: rgb(255, 255, 255);
+.tableImg1 {
+  /* background-color: red; */
+  width: 2vw;
+}
+.tableImg1 hr {
+  height: 0.2vw;
+  width: 100%;
+  border: none;
+  background-color: #f9202f;
+  /* opacity: 0.5; */
+  /* border-radius: 1vw 0 0 1vw; */
+}
+.tableVerticalImg {
+  width: 0.5vw;
+  background-color: #f9202f;
+}
+.tableVerticalImgFirst {
+  border-radius: 1vw 1vw 0 0;
+}
+.tableVerticalImgLast {
+  border-radius: 0 0 1vw 1vw;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  /* width: 100%; */
+  background: #ff3645;
+  min-height: 10vw; /* 100px = 10vw */
+  /* padding: 2vw 5vw; */
+  margin-top: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.F-Menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1vw 0; /* 10px = 1vw */
+  flex-wrap: wrap;
+}
+.F-M-item {
+  list-style: none;
+}
+.F-M-link {
+  font-size: 1.2vw; /* 1.2rem = 1.2vw */
+  color: #fff;
+  margin: 0 1vw; /* 10px = 1vw */
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 100;
+  font-family: Montserrat;
+}
+.F-M-link:hover {
+  opacity: 1;
+}
+.footer p {
+  color: #fff;
+  margin: 1.5vw 0 1vw 0; /* 15px = 1.5vw, 10px = 1vw */
+  font-size: 1vw; /* 1rem = 1vw */
+  font-weight: 300;
+  font-family: Montserrat;
+}
+.F-wave {
+  position: absolute;
+  top: -5vw; /* 100px = 10vw */
+  left: 0;
+  width: 100%;
+  height: 5vw; /* 100px = 10vw */
+  background: url("./images/wave.png");
+  background-size: 100vw 5vw; /* 1000px = 100vw, 100px = 10vw */
+}
+.F-wave#wave1 {
+  z-index: 1;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+.F-wave#wave2 {
+  z-index: 2;
+  opacity: 0.5;
+  bottom: 1vw; /* 10px = 1vw */
+  animation: animate 4s linear infinite !important;
+}
+.F-wave#wave3 {
+  z-index: 3;
+  opacity: 0.2;
+  bottom: 1.5vw; /* 15px = 1.5vw */
+  animation: animateWaves 3s linear infinite;
+}
+.F-wave#wave4 {
+  z-index: 4;
+  opacity: 0.7;
+  bottom: 2vw; /* 20px = 2vw */
+  animation: animate 3s linear infinite;
+}
+@keyframes animateWaves {
+  0% {
+    background-position-x: 100vw; /* 1000px = 100vw */
+  }
+  100% {
+    background-position-x: 0vw;
+  }
+}
+@keyframes animate {
+  0% {
+    background-position-x: -100vw; /* -1000px = -100vw */
+  }
+  100% {
+    background-position-x: 0vw;
+  }
+}
+
+.keyboard {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0;
+  background: #004134;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  user-select: none;
+  transition: bottom 0.4s;
+}
+
+.keyboard--hidden {
+  bottom: -100%;
+}
+
+.keyboard__keys {
+  text-align: center;
+}
+
+.keyboard__key {
+  height: 45px;
+  width: 6%;
+  max-width: 90px;
+  margin: 3px;
+  border-radius: 4px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 1.05rem;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+.keyboard__key:active {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.keyboard__key--wide {
+  width: 12%;
+}
+
+.keyboard__key--extra-wide {
+  width: 36%;
+  max-width: 500px;
+}
+
+.keyboard__key--activatable::after {
+  content: "";
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+.keyboard__key--active::after {
+  background: #08ff00;
+}
+
+.keyboard__key--dark {
+  background: rgba(0, 0, 0, 0.25);
 }
 
 /* Расположение стилей должно идти в строгом порядке
