@@ -1,15 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Поиск значений</title>
-  </head>
-  <body>
-    <input type="text" id="searchInput" placeholder="Введите значение" />
-    <button id="searchButton">Найти</button>
-    <p id="result">Результат будет здесь...</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chronological Line</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="ChronologicalLine">
+    <div id="CL-Line">
+      <div id="CL-MainLine"></div>
 
-    <script src="script.js"></script>
-  </body>
+      <!-- Событие 1 -->
+      <div class="CL-Marker" style="left: 5vw;"></div>
+      <div class="CL-Year" style="bottom: calc(50% - 7vw); left: 5vw;">2000</div>
+      <div class="CL-Card" style="top: calc(50% - 15vw); left: 5vw;">
+        <div>Событие 1</div>
+        <button>Смотреть далее</button>
+      </div>
+
+      <!-- Событие 2 -->
+      <div class="CL-Marker" style="left: 15vw;"></div>
+      <div class="CL-Year" style="top: calc(50% - 7vw); left: 15vw;">2005</div>
+      <div class="CL-Card" style="bottom: calc(50% - 18vw); left: 15vw;">
+        <div>Событие 2</div>
+        <button>Смотреть далее</button>
+      </div>
+
+      <!-- Событие 3 -->
+      <div class="CL-Marker" style="left: 25vw;"></div>
+      <div class="CL-Year" style="bottom: calc(50% - 7vw); left: 25vw;">2010</div>
+      <div class="CL-Card" style="top: calc(50% - 15vw); left: 25vw;">
+        <div>Событие 3</div>
+        <button>Смотреть далее</button>
+      </div>
+
+      <!-- Событие 4 -->
+      <div class="CL-Marker" style="left: 35vw;"></div>
+      <div class="CL-Year" style="top: calc(50% - 7vw); left: 35vw;">2015</div>
+      <div class="CL-Card" style="bottom: calc(50% - 18vw); left: 35vw;">
+        <div>Событие 4</div>
+        <button>Смотреть далее</button>
+      </div>
+
+      <!-- Событие 5 -->
+      <div class="CL-Marker" style="left: 45vw;"></div>
+      <div class="CL-Year" style="bottom: calc(50% - 7vw); left: 45vw;">2020</div>
+      <div class="CL-Card" style="top: calc(50% - 15vw); left: 45vw;">
+        <div>Событие 5</div>
+        <button>Смотреть далее</button>
+      </div>
+
+      <!-- Событие 6 -->
+      <div class="CL-Marker" style="left: 55vw;"></div>
+      <div class="CL-Year" style="top: calc(50% - 7vw); left: 55vw;">2025</div>
+      <div class="CL-Card" style="bottom: calc(50% - 18vw); left: 55vw;">
+        <div>Событие 6</div>
+        <button>Смотреть далее</button>
+      </div>
+
+      <!-- Событие 7 -->
+      <div class="CL-Marker" style="left: 65vw;"></div>
+      <div class="CL-Year" style="bottom: calc(50% - 7vw); left: 65vw;">2030</div>
+      <div class="CL-Card" style="top: calc(50% - 15vw); left: 65vw;">
+        <div>Событие 7</div>
+        <button>Смотреть далее</button>
+      </div>
+
+      <!-- Событие 8 -->
+      <div class="CL-Marker" style="left: 75vw;"></div>
+      <div class="CL-Year" style="top: calc(50% - 7vw); left: 75vw;">2035</div>
+      <div class="CL-Card" style="bottom: calc(50% - 18vw); left: 75vw;">
+        <div>Событие 8</div>
+        <button>Смотреть далее</button>
+      </div>
+
+      <!-- Событие 9 -->
+      <div class="CL-Marker" style="left: 85vw;"></div>
+      <div class="CL-Year" style="bottom: calc(50% - 7vw); left: 85vw;">2040</div>
+      <div class="CL-Card" style="top: calc(50% - 15vw); left: 85vw;">
+        <div>Событие 9</div>
+        <button>Смотреть далее</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>

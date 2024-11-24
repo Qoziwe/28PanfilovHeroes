@@ -503,61 +503,200 @@ button {
   color: rgb(216, 216, 216);
 }
 
-/* MembersAwards */
-#MembersAwards {
-  /* background: url(https://vkplay.ru/pre_0x736_resize/hotbox/content_files/news/2021/07/13/545614319450476981a285445e59ae85.jpg?quality=85); */
-  background: linear-gradient(
-      45deg,
-      rgba(0, 0, 0, 0.8029586834733894) 0%,
-      rgba(0, 0, 0, 0.8) 100%
-    ),
-    url(https://vkplay.ru/pre_0x736_resize/hotbox/content_files/news/2021/07/13/545614319450476981a285445e59ae85.jpg?quality=85);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-}
-#MA-Article {
-  margin-top: 5vw;
-  font-size: 4vw;
-  font-family: monospace;
-  color: aliceblue;
-}
-#MA-Main {
-  height: 35vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#MA-M-Model {
-  width: 40vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#MA-M-Model model-viewer {
-  width: 35vw;
-  height: 35vw;
-}
-#MA-M-Text {
-  width: 60vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2vw;
-}
-#MA-M-Text li {
-  /* max-width: 40vw; */
-  padding: 0;
-  margin: 0;
-  font-size: 1.4vw;
-  font-family: monospace;
-  color: aliceblue;
+ /* Timeline */
+#TL-Timeline {
+  padding: 4vw 2vw;
+  max-width: 120vw;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Montserrat;
 }
 
+#TL-Title {
+  font-size: 4.5vw;
+  color: #e63946;
+  margin-bottom: 3vw;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+}
+
+#TL-Container {
+  display: flex;
+  width: 100vw;
+  height: 17vw;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-bottom: 6vw;
+  padding-top: 1vw;
+  scroll-behavior: smooth;
+}
+
+/* Стилизация скроллбара (WebKit) */
+#TL-Container::-webkit-scrollbar {
+  height: 1vw; /* Толщина скроллбара */
+  background-color: #2a2a2a; /* Цвет фона скроллбара */
+  border-radius: 0.5vw;
+}
+
+#TL-Container::-webkit-scrollbar-thumb {
+  background-color: #e63946; /* Основной цвет ползунка */
+  border-radius: 0.5vw;
+  border: 0.2vw solid #2a2a2a; /* Обводка вокруг ползунка */
+}
+
+#TL-Container::-webkit-scrollbar-thumb:hover {
+  background-color: #ff6b6b; /* Цвет при наведении */
+}
+
+#TL-Container::-webkit-scrollbar-track {
+  background-color: #444; /* Цвет трека (дорожки) */
+  border-radius: 0.5vw;
+}
+
+.TL-Event {
+  flex: 0 0 20vw;
+  height: 16vw; /* Устанавливаем фиксированную высоту */
+  display: flex;
+  flex-direction: column; /* Сохраняем структуру карточки */
+  justify-content: space-between; /* Выравниваем содержимое */
+  background-color: #2a2a2a;
+  border: 0.1vw solid #444;
+  border-radius: 1vw;
+  padding: 2vw;
+  margin: 0 1vw;
+  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.TL-Content {
+  text-align: left;
+  flex-grow: 1; /* Контент растягивается по высоте, если нужно */
+  overflow: hidden; /* Скрываем лишнее содержимое */
+}
+
+.TL-Event:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.6vw 1.2vw rgba(0, 0, 0, 0.7);
+}
+
+.TL-Date {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 1vw;
+}
+
+.TL-Title {
+  font-size: 1.8vw;
+  margin-bottom: 1vw;
+  color: #f4f4f4;
+}
+
+.TL-Description {
+  font-size: 1.2vw;
+  line-height: 1.5;
+  color: #d3d3d3;
+}
+
+/* #TL-Container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0.5vw;
+  height: 0.4vw;
+  background-color: #e63946;
+  z-index: 0;
+} */
+
+.TL-Event::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -1vw;
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: #e63946;
+  border: 0.3vw solid #2a2a2a;
+  border-radius: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+
+.TL-Event:first-child::before {
+  left: 0;
+}
+
+
+#TL-modal{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #2a2a2a;
+  width: 70vw;
+  height: 40vw;
+  z-index: 2;
+  border-radius: 2vw;
+  opacity: 0;
+  box-shadow: 0vw 0vw 1.3vw 0vw rgb(82, 82, 82);
+
+}
+#TL-M-container{
+  margin: 3vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  color: white;
+}
+#TL-M-container button{
+  background: transparent;
+  border: transparent;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 2.2vw;
+  right: 3vw;
+  transition: 200ms ease-in-out;
+}
+#TL-M-container button :hover{
+  scale: 1.5;
+  filter: drop-shadow(0px 0px 16px #d4101073);
+    color: rgb(216, 216, 216);
+}
+#TL-exit img{
+  width: 5vw;
+  transition: 200ms ease-in-out;
+}
+#TL-M-container img :hover{
+  width: 1.5;
+  filter: drop-shadow(0px 0px 16px #d4101073);
+    color: rgb(216, 216, 216);
+}
+#TL-M-container h2{
+  margin: 0vw;
+  color:#e63946;
+  font-size: 2vw;
+  font-family: Montserrat;
+}
+#TL-M-container h1{
+  margin: 0vw;
+  color: white;
+  font-size: 3vw;
+  font-family: Montserrat;
+}
+#TL-M-container p{
+  margin: 0vw;
+  color: white;
+  font-size: 1.5vw;
+  font-family: Montserrat;
+}
 /* Footer */
 #Footer {
   height: 7vw;

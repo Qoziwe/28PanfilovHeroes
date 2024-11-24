@@ -1,0 +1,136 @@
+
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+    color: #fff;
+  }
+  
+  #TL-Timeline {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #TL-Title {
+    font-size: 2.5rem;
+    color: #e63946;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  #TL-Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    overflow-x: scroll;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+  }
+
+  
+  /* Стилизация скроллбара (WebKit) */
+  #TL-Container::-webkit-scrollbar {
+    height: 10px; /* Толщина скроллбара */
+    background-color: #2a2a2a; /* Цвет фона скроллбара */
+    border-radius: 5px;
+  }
+  
+  #TL-Container::-webkit-scrollbar-thumb {
+    background-color: #e63946; /* Основной цвет ползунка */
+    border-radius: 5px;
+    border: 2px solid #2a2a2a; /* Обводка вокруг ползунка */
+  }
+  
+  #TL-Container::-webkit-scrollbar-thumb:hover {
+    background-color: #ff6b6b; /* Цвет при наведении */
+  }
+  
+  #TL-Container::-webkit-scrollbar-track {
+    background-color: #444; /* Цвет трека (дорожки) */
+    border-radius: 5px;
+  }
+  
+  .TL-Event {
+    flex: 0 0 300px;
+    height: 200px; /* Устанавливаем фиксированную высоту */
+    display: flex;
+    flex-direction: column; /* Сохраняем структуру карточки */
+    justify-content: space-between; /* Выравниваем содержимое */
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.TL-Content {
+    text-align: left;
+    flex-grow: 1; /* Контент растягивается по высоте, если нужно */
+    overflow: hidden; /* Скрываем лишнее содержимое */
+}
+  .TL-Event:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+  }
+  
+  .TL-Date {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 10px;
+  }
+  
+  .TL-Content {
+    text-align: left;
+  }
+  
+  .TL-Title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f4f4f4;
+  }
+  
+  .TL-Description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #d3d3d3;
+  }
+  
+  #TL-Container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 5;
+    height: 4px;
+    background-color: #e63946;
+    z-index: 0;
+  }
+  
+  .TL-Event::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background-color: #e63946;
+    border: 3px solid #2a2a2a;
+    border-radius: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+  
+  .TL-Event:first-child::before {
+    left: 0;
+  }
